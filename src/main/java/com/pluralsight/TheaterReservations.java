@@ -20,8 +20,7 @@ public class TheaterReservations
         String userDateInput = input.nextLine();
 
         // fixes formatting of the date, makes it American standard
-        DateTimeFormatter formatter;
-        formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
         LocalDate dateOfShow = LocalDate.parse(userDateInput, formatter);
 
         // asks user how many tickets they want
